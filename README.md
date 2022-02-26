@@ -1,10 +1,10 @@
 # Quickswap History
 
-Check it out live: [https://demo.furadao.org/subgraph/polygon/quickswap](https://demo.furadao.org/subgraph/polygon/quickswap)
+Check it out live: [https://staging.fura.org/quickswap](https://staging.fura.org/quickswap)
 
 
 ### Fura - Quickswap GraphQL Endpoint
-https://polygon.furadao.org/subgraphs/name/quickswap
+https://api.fura.org/subgraphs/name/quickswap
 
 ### Code Configuration
 change [src/apollo/client.js](https://github.com/Uniswap/uniswap-info/blob/v2/src/apollo/client.js) as follows:
@@ -12,7 +12,7 @@ change [src/apollo/client.js](https://github.com/Uniswap/uniswap-info/blob/v2/sr
 ```
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://polygon.furadao.org/subgraphs/name/quickswap',
+    uri: 'https://api.fura.org/subgraphs/name/quickswap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -20,7 +20,7 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://polygon.furadao.org/subgraphs/name/quickswap',
+    uri: 'https://api.fura.org/subgraphs/name/quickswap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -28,14 +28,14 @@ export const healthClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://polygon.furadao.org/subgraphs/name/quickswap',
+    uri: 'https://api.fura.org/subgraphs/name/quickswap',
   }),
   cache: new InMemoryCache(),
 })
 ```
 
 ### CORS Settings
-https://polygon.furadao.org/subgraphs/name/quickswap 
+https://api.fura.org/subgraphs/name/quickswap 
 
 now supports:
 ```
@@ -47,7 +47,7 @@ info.quickswap.exchange
 ```
 
 ### Full Schema
-check [schema.graphql](https://github.com/furaprotocol/quickswap-info/blob/main/schema.graphql)
+check [schema.graphql](https://github.com/fura-protocol/fura-api-quickswap/blob/main/schema.graphql)
 
 ```
 It is the same as
@@ -61,5 +61,6 @@ http://thegraph.com/legacy-explorer/subgraph/sameepsi/quickswap06
 ```
 
 ### Use Playground
-https://github.com/graphql/graphql-playground
+https://github.com/graphql/graphql-playground 
 
+https://github.com/graphql/graphiql 

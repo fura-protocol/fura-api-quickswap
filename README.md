@@ -4,7 +4,10 @@ Check it out live: [https://staging.fura.org/quickswap](https://staging.fura.org
 
 
 ### Fura - Quickswap GraphQL Endpoint
-https://api.fura.org/subgraphs/name/quickswap
+https://api.fura.org/subgraphs/name/quickswap  
+
+Furadao endpoint will be offline by 31 March, 2022:
+~~https://polygon.furadao.org/subgraphs/name/quickswap~~
 
 ### Code Configuration
 change [src/apollo/client.js](https://github.com/Uniswap/uniswap-info/blob/v2/src/apollo/client.js) as follows:
@@ -43,7 +46,24 @@ localhost:3000
 localhost:9528
 127.0.0.1:3000
 127.0.0.1:9528
+
 info.quickswap.exchange
+alpha.quickswap.exchange
+beta.quickswap.exchange
+dev.quickswap.exchange
+
+paraswap.io
+staging.paraswap.io
+
+onx.finance
+app.onx.finance
+testnet.onx.finance
+
+app.mai.finance
+app.orion.money
+
+telx.network
+www.telx.network
 ```
 
 ### Full Schema
